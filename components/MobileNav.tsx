@@ -14,6 +14,7 @@ import {
   import { cn } from "@/lib/utils"
   import { usePathname } from "next/navigation"
   import { SheetClose } from "@/components/ui/sheet"
+import Footer from "./Footer"
   
 
 const MobileNav = ({user}: MobileNavProps) => {
@@ -58,7 +59,7 @@ const MobileNav = ({user}: MobileNavProps) => {
                         User
                     </nav>
                 </SheetClose>
-                Footer
+                <Footer user={user} type="mobile"/>
 
             </div>
 
